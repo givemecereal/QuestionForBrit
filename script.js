@@ -2,6 +2,42 @@ const yesBtn = document.getElementById("yesBtn");
 const noBtn = document.getElementById("noBtn");
 const response = document.getElementById("response");
 
+const introScreen = document.getElementById("intro-screen");
+const questionScreen = document.getElementById("question-screen");
+const nextBtn = document.getElementById("next-btn");
+const introTitle = document.getElementById("intro-title");
+const introText = document.getElementById("intro-text");
+
+const introGifs = [
+  "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHQ5bW1wNDNoaDl1em54MjI5NjRleWhreDdpeWp2YzllaXN3aGdsNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/y93x7gLXTO5dnSWCEI/giphy.gif", 
+  "https://media1.tenor.com/m/E4auL-XxaaYAAAAd/floreyonce-cat.gif", 
+  "https://media.tenor.com/j4qf7yxIXusAAAAi/cute.gif", 
+];
+
+let introStep = 0;
+
+nextBtn.addEventListener("click", () => {
+  introStep++;
+  if (introStep === 1) {
+    document.getElementById("intro-gif").src = introGifs[introStep];
+    introTitle.textContent = "Okay… here it goes 😅";
+    introText.textContent =
+      "February 14 isn't until another 2 weeks ... but hopefully i can be the 1 4 u LOL";
+  }
+
+  else if (introStep === 2) {
+    document.getElementById("intro-gif").src = introGifs[introStep];
+    introTitle.textContent = "One more thing…";
+    introText.textContent = "I’ve been meaning to ask you something 💭";
+    nextBtn.textContent = "Continue ➡️";
+  }
+
+  else if (introStep === 3) {
+    introScreen.classList.add("hidden");
+    questionScreen.classList.remove("hidden");
+  }
+});
+
 yesBtn.addEventListener("click", () => {
     response.textContent = "YAY 💕 You’re officially my Valentine!\r\nSee you on 2/14 ;)";
     response.classList.remove("hidden");
@@ -43,7 +79,7 @@ noBtn.addEventListener("click", () => {
     noBtn.style.opacity = "0";
     noBtn.style.pointerEvents = "none";
 
-    response.textContent = "You know what, you don't have a choice anymore";
+    response.textContent = "You know what, you don't have a choice anymore >:(";
     response.classList.remove("hidden");
   }
 });

@@ -5,13 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Valentine?</title>
   <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+    
     <div class="hearts"></div>
     <div class="container">
+        
+        <div id="intro-screen">
+        <img id="intro-gif" class="gif" src="https://media1.tenor.com/m/9KRFEXop-4AAAAAC/ami-fat-cat-fgcat.gif" />
+    
+        <h1 id="intro-title">Hi Britney 💖</h1>
+        <p id="intro-text">Want to hear a joke? :D</p>
+    
+        <button id="next-btn">Next ➡️</button>
+        </div>
+
+        <div id="question-screen" class="hidden">
         <h1>Hi Britney ❤️</h1>
-        <p>I made this because asking you normally felt too boring.</p>
-        <h2>Will you be my Valentine?</h2>
+        <p> </p>
+        <h2>Will you be my Valentine? :)</h2>
         <div id="no-gifs">
             <img class="gif no-gif hidden" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2xiZzJwdTBob29nOTI5NHFuNmxtanM3d2RrZW05cWIxa3czcTF3YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XJ26ITqTztKS4G50p6/giphy.gif" />
             <img class="gif no-gif hidden" src="https://media1.tenor.com/m/dM84IE0zv_MAAAAC/no-try-again-no.gif" />
@@ -37,6 +50,8 @@
         </div>
         
         <p id="response" class="hidden"></p>
+        </div>
+
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
