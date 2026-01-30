@@ -44,6 +44,7 @@ yesBtn.addEventListener("click", () => {
     noBtn.style.display = "none";
     yesBtn.style.display = "none";
 
+    document.getElementById("question-text").classList.add("hidden");
     document.getElementById("gif-before").classList.add("hidden");
     document.getElementById("gif-after").classList.remove("hidden");
     document.getElementById("no-gifs").classList.add("hidden");
