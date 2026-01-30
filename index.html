@@ -7,19 +7,39 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Hey ❤️</h1>
-    <p>I made this because asking you normally felt too boring.</p>
-    <h2>Will you be my Valentine?</h2>
-
-    <div class="buttons">
-      <button id="yesBtn">Yes 💖</button>
-      <button id="noBtn">Let me think 🙈</button>
+    <div class="hearts"></div>
+    <div class="container">
+        <h1>Hi Britney ❤️</h1>
+        <p>I made this because asking you normally felt too boring.</p>
+        <h2>Will you be my Valentine?</h2>
+        <div id="no-gifs">
+            <img class="gif no-gif hidden" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2xiZzJwdTBob29nOTI5NHFuNmxtanM3d2RrZW05cWIxa3czcTF3YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XJ26ITqTztKS4G50p6/giphy.gif" />
+            <img class="gif no-gif hidden" src="https://media1.tenor.com/m/dM84IE0zv_MAAAAC/no-try-again-no.gif" />
+            <img class="gif no-gif hidden" src="https://media1.tenor.com/m/TKq6Fn71XPgAAAAd/seriously-seriously-cat.gif" />
+            <img class="gif no-gif hidden" src="https://media1.tenor.com/m/yNMKhuE2zYgAAAAd/angry-cat-angry-cat-zoom.gif" />
+            <img class="gif no-gif hidden" src="https://media1.tenor.com/m/RAIqnFnWRqAAAAAC/kitty-cat.gif" />
+        </div>
+        <img
+        id = "gif-before"
+        src = "https://gifdb.com/images/high/cute-love-bear-roses-ou7zho5oosxnpo6k.gif"
+        alt="cute gif"
+        class="gif"
+        />
+        <img
+        id = "gif-after"
+        src = "https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif"
+        alt = "celebration gif"
+        class="gif hidden"
+        />
+        <div class="buttons">
+            <button id="yesBtn">Yes 💖</button>
+            <button id="noBtn">Let me think 🙈</button>
+        </div>
+        
+        <p id="response" class="hidden"></p>
     </div>
-
-    <p id="response" class="hidden"></p>
-  </div>
-
-  <script src="script.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
